@@ -1,0 +1,13 @@
+html
+  head
+    title Product || #{item.title}
+  body
+    h1 Title : #{item.title}
+    p Description : #{item.description}
+    img(src=`${item.thumbnail}`)
+    h3 price : #{item.price}
+    ul 
+      each image in item.images
+        li
+          img(src=`${image}`)
+    

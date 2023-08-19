@@ -1,0 +1,10 @@
+html
+  head
+    title = #{title}
+  body
+    ul 
+        each item in products 
+            li 
+                a(href="/products/" + item.id)  #{item.id} - #{item.title} - #{item.rating} / 5
+        else
+            li There are no values
